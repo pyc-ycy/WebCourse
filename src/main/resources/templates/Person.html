@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/http_cdn.staticfile.org_twitter-bootstrap_3.3.7_css_bootstrap.css">
+    <link rel="stylesheet" href="../static/css/person.css">
     <style>
         .fakeimg {
             height: 200px;
             background: #aaa;
+        }
+        a:default{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: red;
+            text-decoration: none;
+            font-size: 140%;
+        }
+        #aul{
+            text-decoration: none;
+            color: white;
+            list-style: none;
         }
     </style>
     <title>御承扬的编程能力介绍</title>
@@ -62,7 +77,7 @@
             </div>
         </div>
         <div class="col-sm-8">
-            <a href="#foot" style='position:fixed;right: 0px; top: 600px;font-size: 24px;'>跳到底部</a>
+            <a href="#foot" style='position:fixed;right: 0px; top: 500px;font-size: 24px;'>跳到底部</a>
             <h2>
                 About Coding
             </h2>
@@ -75,7 +90,7 @@
             <hr style="width: 50%;color: cornflowerblue;border-style: dot-dot-dash;border-width: 3px;">
             <table class="table">
                 <caption style="text-align: center">我所熟悉的编程语言以及相关 IDE</caption>
-                <thead>
+                <thead class="table_head">
                 <tr>
                     <th>语言名称</th>
                     <th>所属类型</th>
@@ -84,7 +99,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td><a href="#c_c++">C/C++</a> </td>
+                    <td><a style="text-decoration: none;" href="#c_c++">C/C++</a> </td>
                     <td>
                         编译型语言，属于后台
                     </td>
@@ -93,7 +108,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><a href="#java">Java</a> </td>
+                    <td><a class="a" href="#java">Java</a> </td>
                     <td>编译型语言，属于后台</td>
                     <td>IntelliJ IDEA 2019.3.3 (Ultimate Edition)</td>
                 </tr>
@@ -106,6 +121,66 @@
                     <td><a href="#html">HTML</a> </td>
                     <td>标记型解释型语言，属于前端</td>
                     <td>IntelliJ IDEA 2019.3.3 (Ultimate Edition)</td>
+                </tr>
+                <tr>
+                    <td style="color: #005cbf">Javascript</td>
+                    <td>解释性语言，属于前端</td>
+                    <td>IntelliJ IDEA 2019.3.3 (Ultimate Edition)</td>
+                </tr>
+                <tr style="background: #5a6268;color: antiquewhite;font-size: 14px;">
+                    <td style="vertical-align:middle">相关推荐链接</td>
+                    <td colspan="2" style="text-align: -moz-center">
+                        <ul id="aul">
+                            <li><a href="https://www.runoob.com/html/html-tutorial.html">
+                                菜鸟教程·HTML教程
+                            </a></li>
+                            <li>
+                                <a href="https://www.runoob.com/css/css-tutorial.html">
+                                    菜鸟教程·CSS教程
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.runoob.com/js/js-tutorial.html">
+                                    菜鸟教程·Javascript教程
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3cschool.cn/">
+                                    W3CSchool 官方网站
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.csdn.net/qq_42896653/category_9516635.html">
+                                    御承扬<strong>·</strong>JavaWeb 系列学习笔记。
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.csdn.net/qq_42896653/category_9162463.html">
+                                    御承扬·PyQt5 系列学习笔记
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.csdn.net/qq_42896653/category_9177247.html">
+                                    御承扬·MFC 系列笔记
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.jetbrains.com/idea/download/#section=windows">
+                                    IntelliJ IDEA 2019.3.3 (Ultimate Edition)下载官网
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.jetbrains.com/pycharm/download/#section=windows">
+                                    Pycharm 下载官网
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://visualstudio.microsoft.com/zh-hans/?rr=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DLVQyU3mCw21nDz_h6ST_SomBB2spXVQxYfKXM-zkewg0Cf658w-ZLgPNqhzM4Eq2%26wd%3D%26eqid%3Dd1dd7b1800079226000000065e741d8c">
+                                    Visual Studio 下载官网
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -224,7 +299,7 @@
         </div>
     </div>
 </div>
-<a href="#head" style='position:fixed;right: 0px; bottom: 500px;font-size: 24px;'>跳到顶部</a>
+<a href="#head" style='position:fixed;right: 0px; bottom: 400px;font-size: 24px;'>跳到顶部</a>
 <div id="foot" class="jumbotron text-center" style="margin-bottom:0">
     <p>Copyright &copy;彭友聪 201724073161</p>
 </div>
