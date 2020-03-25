@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面布局</title>
+    <link rel="stylesheet" href="../static/css/buju.css">
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div style="margin-top: 10px;padding-top:30px; ">
+            <h1 style="color: red;">Web 课实验·页面布局</h1>
+        </div>
+    </div>
+    <div id="nav">
+        <a href="Home.html">御承扬</a>
+        <a href="Home.html">首页</a>
+        <a href="Person.html">个人页</a>
+        <a href="#">页面布局</a>
+    </div>
+    <div id="main">
+        <div id="lp" class="aside">
+            <br>
+            <img src="../static/images/spring.jfif" alt="照片" style="width: 300px;height: 90px;">
+            <br>
+            <br>
+            <img src="../static/images/java.jfif" alt="照片" style="width: 300px;height: 200px;">
+            <br>
+            <br>
+            <img src="../static/images/html.jfif" alt="照片" style="width: 300px;height: 250px;">
+        </div>
+        <div id="content">
+            <div id="text-content">
+                <div id="title">
+                    <h2 style="color: #005cbf;text-align: center;">Java Web 技术</h2>
+                </div>
+                <div style="text-align: left">
+                    <p>
+                        所谓 Java Web 技术, 是指在搭建一个网站时，网站地后台业务逻辑代码，诸如：
+                        用户注册事件、用户登录事件、相关按钮地单据等事件的功能实现代码，选择 用<strong>Java</strong>
+                        进行编辑。
+                    </p>
+                    <P>
+                        进行 Java Web 开发时，若不使用框架，创建一个纯粹的 Java Web 项目的话，一般用<strong>JSP</strong>
+                        作为前端可视页面，JSP 页面的大部分语法是和 HTML 语法一致的，只不过 JSP 相对于 html 页面，
+                        多了对 Java 代码的直接支持，也就是说通过再页面使用相关标签就可以直接编写 java 代码，而服务器会自动解析并执行。
+                        服务器一般选择<strong>Tomcat</strong>服务器。
+                    </P>
+                    <p>
+                        虽然 JSP 页面可以直接编写java代码，但是实际开发中并不会如此做，为了前后端分离和后期维护，通常都是前端归前端，
+                        后台归后台，采用独立的java文件来编写Java代码。前后台分离后，为了提高工作效率，通常会选用<strong>Spring</strong>
+                        这个强大而流行的java web 后台框架，来开发网站的后台。此时前端页面可以仍旧采用 JSP 页面，只不过没有对应的前台框架可以用。
+                        如果，前台页面不用JSP，而用HTML文件来实现的话，那么为了更快地开发速度，和省去自己写样式表得工作，web 开发者会选用<strong>Bootstrap</strong>
+                        或<strong>AngularJS</strong>这两个前端框架。更进一步，还可以考虑采用页面模板引擎，如<strong>Thymeleaf</strong>，
+                        对应的，后台也可以进一步采用<strong>Hibernate</strong>这些用于数据交互的框架。
+                    </p>
+                    <p>
+                        所以，一个现代Java Web应用，往往是这样的：前后端逻辑分离，前台用JSP+CSS+Javascript组合，或HTML+Bootstrap+AngularJS组合；
+                        后台用 Spring Boot + Hibernate + MySQL(Oracle)数据库。前台的第一种组合，实际运用现在不同，因为 JSP 页面没有现成的相关优秀框架可以用，
+                        一切样式都要开发者自己编辑实现，而采用第二种组合开发者要比采用第一种的省却不少工作量。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="rp" class="aside">
+            <br>
+            <img src="../static/images/spring.jfif" alt="照片" style="width: 300px;height: 90px;">
+            <br>
+            <br>
+            <img src="../static/images/css.jfif" alt="照片" style="width: 300px;height: 200px;">
+            <br>
+            <br>
+            <img src="../static/images/javascript.jpg" alt="照片" style="width: 300px;height: 250px;">
+        </div>
+    </div>
+    <div id="footer">
+        <div style="margin-top: 10px;padding-top: 50px;">
+            <h1 style="color: #f8f8f8">Copyright <strong>&copy;彭友聪 </strong>201724073161</h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
