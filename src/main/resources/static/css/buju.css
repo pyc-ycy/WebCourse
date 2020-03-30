@@ -84,6 +84,7 @@ a:hover{
     text-align: center;
     margin: 0 auto;
     padding-top: 50px;
+    overflow: auto;
 }
 #title{
     position: relative;
