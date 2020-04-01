@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角和阴影</title>
+    <link rel="stylesheet" href="../static/css/buju.css">
+    <style type="text/css">
+        .active{
+            color: blue;
+            transform: scale(1.2);
+        }
+        #RotateBox{
+            margin-top: 50px;
+            width: 400px;
+            height: 300px;
+            border: 2px solid #a1a1a1;
+            background-color: #ddd;
+            border-radius: 25px;
+            box-shadow: 10px 10px 5px #888;
+            transform: rotate(15deg);
+        }
+        #Box{
+            margin-top: 50px;
+            width: 400px;
+            height: 300px;
+            border: 2px solid #a1a1a1;
+            background-color: #ddd;
+            border-radius: 25px;
+            box-shadow: 10px 10px 5px #888;
+        }
+        .pic{
+            margin: 10px auto;
+            width: 250px;
+            height: 250px;
+        }
+        .pic img{
+            width: 250px;
+            height: 250px;
+        }
+        .box{
+            text-align: center;
+            margin: 20px auto;
+            height: 660px;
+            width: 280px;
+            line-height: 50px;
+            border-radius: 5px;
+            color: black;
+            background-color: gray;
+            transition: all 1s linear;
+        }
+        .box:hover{
+            color: white;
+            background-color: green;
+        }
+        .box1{
+            text-indent: 2em;
+            text-align: justify;
+            margin: 20px auto;
+            height: 660px;
+            width: 280px;
+            line-height: 40px;
+            vertical-align: middle;
+            border-radius: 5px;
+            color: black;
+            background-color: gray;
+            word-wrap: break-word;
+            font-size: 16px;
+            text-shadow: 2px 2px 2px #000;
+        }
+        .content-rBox{
+            width: 410px;
+            height: auto;
+            float: right;
+        }
+        .content-lBox{
+            margin-top: 50px;
+            width: 210px;
+            height: 600px;
+            float: left;
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div style="margin-top: 10px;padding-top:30px; ">
+            <h1 style="color: red;">Web 课实验·圆角和阴影</h1>
+        </div>
+    </div>
+    <div id="nav">
+        <a href="Home.html">御承扬</a>
+        <a href="Home.html">首页</a>
+        <a href="Person.html">个人页</a>
+        <a href="Buju.html">页面布局</a>
+        <a href="#" class="active">圆角和阴影</a>
+    </div>
+    <div id="main">
+        <div id="lp" class="aside">
+            <div class="box1">
+                <h2 style="text-align: center;">About Python</h2>
+                Python is an interpreted, object-oriented,
+                high-level programming language for dynamic data types.
+                Python was invented by Guido van Rossum at the end of 1989,
+                and the first public release was released in 1991. Like Perl,
+                Python source code also follows the GPL (GNU General Public License) agreement.
+                Python can also be used for the development of desktop windows applications,
+                but the most important aspect is user big data mining.<br>
+                Test the longest word in the world：pneumonoultramicroscopicsilicovolcanoconiosis.
+            </div>
+        </div>
+        <div id="content">
+            <div class="content-lBox">
+                <h2 style="text-align: center">Python 与 PyQt5</h2>
+                <div style="text-align: justify;text-indent:2em;">
+                    Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。
+                    Python 由 Guido van Rossum 于 1989 年底发明，第一个公开发行版发行于 1991 年。
+                    像 Perl 语言一样, Python 源代码同样遵循 GPL(GNU General Public License) 协议。
+                    Python 一样也可以用桌面视窗应用的开发，不过更主要的是用户大数据挖掘这方面。
+                </div>
+                <div style="text-align: justify;text-indent:2em;">
+                    PyQt5 是 Python 的一个第三方库，用于开发可视化桌面应用程序用的，
+                    是从 Qt 移植过来的，可以以纯代码的形式开发，也可以通过 qt-tools 提供的
+                    可视化设计器进行开发，使用设计器时，遵循所见即所得的原则布置控件的位置和布局。
+                    PyQt5 除了用于开发可视化 Python 应用，还可以进一步结合 qtpadas 进行数据可视化，
+                    生成和制作美观的图表。
+                </div>
+            </div>
+            <div class="content-rBox">
+                <div id="RotateBox">
+                    <div class="pic">
+                        <img src="../static/images/python.jpg" alt="pic">
+                    </div>
+                </div>
+                <div id="Box">
+                    <div class="pic">
+                        <img src="../static/images/qt.jpg" alt="pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rp" class="aside">
+            <div class="box">
+                <h1>About PyQt5</h1>
+                PyQt5 is a third-party library for Python.
+                It is used to develop visual desktop applications.
+                It is ported from Qt. It can be developed in the form of pure code
+                or through the visual designer provided by qt-tools. Use the designer Layout,
+                follow the WYSIWYG principle to arrange the position and layout of the control.
+                In addition to developing visual Python applications,
+                PyQt5 can be further combined with qtpadas for data visualization,
+                generating and making beautiful charts.
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div style="margin-top: 10px;padding-top: 50px;">
+            <h1 style="color: #f8f8f8">Copyright <strong>&copy;彭友聪 </strong>201724073161</h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
