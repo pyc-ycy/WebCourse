@@ -23,6 +23,145 @@
             color: white;
             list-style: none;
         }
+        #stable{
+            width: 750px;
+            height: 500px;
+        }
+        .picRow{
+            width: 740px;
+            margin: 5px;
+            height: 245px;
+            position: relative;
+        }
+        .picBox{
+            width: 240px;
+            height: 245px;
+            margin-left: 5px;
+            float: left;
+            background-color: gray;
+            perspective: 200px;
+        }
+        .X1,.Y1,.Z1,.X2,.Y2,.Z2{
+            width: 240px;
+            height: 245px;
+            position: relative;
+            background-color: gray;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            transition: 1.5s;
+        }
+        .X1 img{
+            width: 240px;
+            height: 245px;
+        }
+        .X1:hover{
+            transform: rotateX(180deg);
+        }
+        .Y1 img{
+            width: 240px;
+            height: 245px;
+        }
+        .Y1:hover{
+            transform: rotateY(180deg);
+        }
+        .Z1 img{
+            width: 240px;
+            height: 245px;
+        }
+        .Z1:hover{
+            transform: rotateZ(180deg);
+        }
+        .X2 img{
+            width: 240px;
+            height: 245px;
+        }
+        .X2:hover{
+            transform: rotateZ(180deg);
+        }
+        .Y2 img{
+            width: 240px;
+            height: 245px;
+        }
+        .Y2:hover{
+            transform: rotateY(180deg);
+        }
+        .Z2 img{
+            width: 240px;
+            height: 245px;
+        }
+        .Z2:hover{
+            transform: rotateX(180deg);
+        }
+        .face{
+            position: absolute;
+            width: 240px;
+            height: 245px;
+        }
+        .front{
+            border:2px solid #4b2518;
+        }
+        .X1-back{
+            /*让它成为背面，开始只显示正面*/
+            transform:rotateX(180deg);
+            background-color: #4b2518;
+            border:2px solid #fff;
+        }
+        .X1-back h3{
+            color:white;
+            text-align:center;
+        }
+        .X2-back{
+            /*让它成为背面，开始只显示正面*/
+            transform:rotateZ(180deg);
+            background-color: #4b2518;
+            border:2px solid #fff;
+        }
+        .X2-back h3{
+            color:white;
+            text-align:center;
+        }
+        .Y1-back{
+            /*让它成为背面，开始只显示正面*/
+            transform:rotateY(180deg);
+            background-color: #4b2518;
+            border:2px solid #fff;
+        }
+        .Y1-back h3{
+            color:white;
+            text-align:center;
+        }
+        .Y2-back{
+            /*让它成为背面，开始只显示正面*/
+            transform:rotateY(180deg);
+            background-color: #4b2518;
+            border:2px solid #fff;
+        }
+        .Y2-back h3{
+            color:white;
+            text-align:center;
+        }
+        .Z1-back{
+            /*让它成为背面，开始只显示正面*/
+            transform:rotateZ(180deg);
+            background-color: #4b2518;
+            border:2px solid #fff;
+        }
+        .Z1-back h3{
+            color:white;
+            text-align:center;
+        }
+        .Z2-back{
+            /*让它成为背面，开始只显示正面*/
+            transform:rotateX(180deg);
+            background-color: #4b2518;
+            border:2px solid #fff;
+        }
+        .Z2-back h3{
+            color:white;
+            text-align:center;
+        }
     </style>
     <title>御承扬的编程能力介绍</title>
 </head>
@@ -89,6 +228,46 @@
                 <h3 id="h1">1、编程语言和 IDE</h3>
             </center>
             <hr style="width: 50%;color: cornflowerblue;border-style: dot-dot-dash;border-width: 3px;">
+            <div id="stable">
+                <div class="picRow">
+                    <div class="picBox">
+                        <div class="X1">
+                            <div class="face front"><img src="../static/images/python.jpg"></div>
+                            <div class="face X1-back"><h3>Python</h3></div>
+                        </div>
+                    </div>
+                    <div class="picBox">
+                        <div class="Y1">
+                            <div class="face front"><img src="../static/images/java.jfif"></div>
+                            <div class="face Y1-back"><h3>java</h3></div>
+                        </div>
+                    </div>
+                    <div class="picBox">
+                        <div class="Z1">
+                            <img src="../static/images/c.jfif" alt="pic">
+                        </div>
+                    </div>
+                </div>
+                <div class="picRow">
+                    <div class="picBox">
+                        <div class="X2">
+                            <img src="../static/images/qt.jpg" alt="pic">
+                        </div>
+                    </div>
+                    <div class="picBox">
+                        <div class="Y2">
+                            <div class="face front"><img src="../static/images/mfc.jpg"></div>
+                            <div class="face Y2-back"><h3>MFC</h3></div>
+                        </div>
+                    </div>
+                    <div class="picBox">
+                        <div class="Z2">
+                            <div class="face front"><img src="../static/images/css.jfif"></div>
+                            <div class="face Z2-back"><h3>CSS</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <table class="table">
                 <caption style="text-align: center">我所熟悉的编程语言以及相关 IDE</caption>
                 <thead class="table_head">
