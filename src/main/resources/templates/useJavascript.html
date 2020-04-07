@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面布局</title>
+    <link rel="stylesheet" href="../static/css/buju.css">
+    <style type="text/css">
+        .active{
+            color: blue;
+        }
+        .cen{
+            margin: 25% auto;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            background-color: #b8daff;
+        }
+    </style>
+    <script>
+        function f1() {
+            alert("head标签内嵌脚本");
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div style="margin-top: 10px;padding-top:30px; ">
+            <h1 style="color: red;">Web 课实验·Javascript使用方式</h1>
+        </div>
+    </div>
+    <div id="nav">
+        <a href="Home.html">御承扬</a>
+        <a href="Home.html">首页</a>
+        <a href="Person.html">个人页</a>
+        <a href="Buju.html">页面布局</a>
+        <a href="test4.html">圆角和阴影</a>
+        <a href="#" class="active">Javascript1</a>
+    </div>
+    <div id="main">
+        <div id="lp" class="aside">
+            <p id="ap">
+                点击下面按钮，会调用在行内Javascript脚本修改本段落内容。
+            </p><br>
+            <button onclick="document.getElementById('ap').innerHTML='这里是在行内Javascript'">行内JS</button>
+        </div>
+        <div id="content">
+            <div class="cen">
+                <h1>
+                    点击下面按钮调用head标签内的Javascript脚本
+                </h1><br>
+                <button onclick="f1()">嵌套JS</button>
+            </div>
+        </div>
+        <div id="rp" class="aside">
+            <p id="t1">
+                点击下面的按钮，会调用外部JS改变本段落内容。
+            </p><br>
+            <script src="../static/js/one.js"></script>
+            <button onclick="f3()">外部JS</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div style="margin-top: 10px;padding-top: 50px;">
+            <h1 style="color: #f8f8f8">Copyright <strong>&copy;彭友聪 </strong>201724073161</h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
