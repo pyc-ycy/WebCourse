@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mete name="viewport" content="width = device-width,initial-scale=1.0"></mete>
+    <meta charset="UTF-8">
+    <title>Bootstrap 综合实例</title>
+    <script src="../static/js/jquery-3.3.1/jquery-3.3.1.js"></script>
+   <script src="../static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap-3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        body{
+            background-color: gray;
+        }
+        @media screen and (min-width: 790px) {
+            body{
+                background-color: #bdd4e9;
+                font-size: 16px;
+            }
+        }
+        @media screen and (min-width: 970px){
+            body{
+                background-color: #906e9f;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="Home.html">御承扬</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="Person.html">站主相关 <span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">网页布局示例 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Buju.html">页面布局</a></li>
+                        <li><a href="test4.html">元素效果</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="useJavascript.html">JS使用</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+</body>
+</html>
