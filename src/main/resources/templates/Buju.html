@@ -1,31 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <mete name="viewport" content="width = device-width,initial-scale=1.0"></mete>
     <meta charset="UTF-8">
     <title>页面布局</title>
-    <link rel="stylesheet" href="../static/css/buju.css">
+    <script src="../static/js/jquery-3.3.1/jquery-3.3.1.js"></script>
+    <script src="../static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap-3.3.7/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="../static/css/buju.css">-->
     <style type="text/css">
-        .active{
-            color: blue;
-            transform: scale(1.2);
+        body{
+            background-color: gray;
+        }
+        @media screen and (max-width: 790px){
+            #content{
+                position: absolute;
+                left: 28%;
+                float: left;
+                width: 40%;
+                background-color: white;
+                margin-left: 5px;
+                height: 600px;
+            }
+            #text-content{
+                text-align: center;
+                margin: 0 auto;
+                padding-top: 50px;
+                overflow: scroll;
+                height: 600px;
+            }
+        }
+        @media screen and (max-width: 1071px){
+            #content{
+                position: absolute;
+                left: 30%;
+                float: left;
+                width: 40%;
+                background-color: white;
+                margin-left: 5px;
+                height: 700px;
+            }
+            #text-content{
+                text-align: center;
+               margin-left: 10px;
+                padding-top: 50px;
+                overflow: scroll;
+                height: 700px;
+            }
+        }
+        @media screen and (max-width: 1900px){
+            #content{
+                position: absolute;
+                left: 40%;
+                float: left;
+                width: 40%;
+                background-color: white;
+                margin-left: 5px;
+                height: 700px;
+            }
+            #text-content{
+                text-align: center;
+                margin-left: 10px;
+                padding-top: 50px;
+                overflow: scroll;
+                height: 700px;
+            }
+        }
+        @media screen and (min-width: 790px) {
+            body{
+                background-color: #bdd4e9;
+                font-size: 16px;
+            }
+        }
+        @media screen and (min-width: 970px){
+            body{
+                font-size: 18px;
+                background-color: #9d9f96;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            body{
+                font-size: 20px;
+                background-color: #899f98;
+            }
+        }
+        #title{
+            position: relative;
+            right: 1%;
+            text-align: center;
+        }
+        p{
+            line-height: 2em;
+            font-family: 华文楷体,serif;
+            text-align: left;
+            font-size: 16px;
+            text-indent: 2em;
+        }
+        #main{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .aside{
+            float: left;
+            width: 300px;
+            height: 700px;
+            background-color: #bdd4e9;
         }
     </style>
 </head>
 <body>
-<div id="container">
-    <div id="header">
-        <div style="margin-top: 10px;padding-top:30px; ">
-            <h1 style="color: red;">Web 课实验·页面布局</h1>
+<div id="head" class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Web 课实验二·页面布局</h1>
+</div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">御承扬</a>
         </div>
-    </div>
-    <div id="nav">
-        <a href="Home.html">御承扬</a>
-        <a href="Home.html">首页</a>
-        <a href="Person.html">个人页</a>
-        <a href="#" class="active">页面布局</a>
-        <a href="test4.html">圆角和阴影</a>
-        <a href="useJavascript.html">Javascript1</a>
-    </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="Home.html">首页</a> </li>
+                <li ><a href="Person.html">站主相关 <span class="sr-only">(current)</span></a></li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">网页布局示例 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="Buju.html">页面布局</a></li>
+                        <li><a href="test4.html">元素效果</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="useJavascript.html">JS使用</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+<!--    <div id="header">-->
+<!--        <div style="margin-top: 10px;padding-top:30px; ">-->
+<!--            <h1 style="color: red;">Web 课实验·页面布局</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div id="nav">-->
+<!--        <a href="Home.html">御承扬</a>-->
+<!--        <a href="Home.html">首页</a>-->
+<!--        <a href="Person.html">个人页</a>-->
+<!--        <a href="#" class="active">页面布局</a>-->
+<!--        <a href="test4.html">圆角和阴影</a>-->
+<!--        <a href="useJavascript.html">Javascript1</a>-->
+<!--    </div>-->
     <div id="main">
         <div id="lp" class="aside">
             <br>
@@ -70,22 +201,10 @@
                 </div>
             </div>
         </div>
-        <div id="rp" class="aside">
-            <br>
-            <img src="../static/images/spring.jfif" alt="照片" style="width: 300px;height: 90px;">
-            <br>
-            <br>
-            <img src="../static/images/css.jfif" alt="照片" style="width: 300px;height: 200px;">
-            <br>
-            <br>
-            <img src="../static/images/javascript.jpg" alt="照片" style="width: 300px;height: 250px;">
-        </div>
     </div>
-    <div id="footer">
-        <div style="margin-top: 10px;padding-top: 50px;">
-            <h1 style="color: #f8f8f8">Copyright <strong>&copy;彭友聪 </strong>201724073161</h1>
-        </div>
-    </div>
+</div>
+<div id="footer" class="jumbotron text-center" style="background-color: #5a6268;;">
+    <h1 style="color: #f8f8f8">Copyright <strong>&copy;彭友聪 </strong>201724073161</h1>
 </div>
 </body>
 </html>
