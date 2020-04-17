@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Testing</title>
+    <script src="../static/js/jquery-3.5.0/jquery-3.5.0.js"></script>
+    <style>
+        body{
+            background-color: white;
+        }
+        @media screen and (min-width: 790px){
+                body{
+                background-color: red;
+            }
+        }
+        @media screen and (min-width: 970px){
+            body{
+                background-color: green;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<p>如果你点我，我就会消失。</p>
+<p>继续点我!</p>
+<p>接着点我!</p>
+<script>
+    function appendText(){
+        let txt1="<p>文本1。</p>";              // 使用 HTML 标签创建文本
+        let txt2=$("<p></p>").text("文本2。");  // 使用 jQuery 创建文本
+        let txt3=document.createElement("p");
+        txt3.innerHTML="文本3。";               // 使用 DOM 创建文本 text with DOM
+        $("body").append(txt1,txt2,txt3);        // 追加新元素
+    }
+</script>
+<button onclick="appendText()">追加文本</button>
+</body>
+</html>
