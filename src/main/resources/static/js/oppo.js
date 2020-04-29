@@ -1,7 +1,7 @@
 $(window).scroll(function(){
-    var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollT = document.documentElement.scrollTop || document.body.scrollTop;
     // console.log(scrollT);
-    var backTop = $("#world").offset().top - $(window).height()/2;
+    let backTop = $("#world").offset().top - $(window).height() / 2;
     // console.log(backTop);
     if(scrollT > backTop){
         $(".a1").addClass("animated bounceInRight show").removeClass("fade");

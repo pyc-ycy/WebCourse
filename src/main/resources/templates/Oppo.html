@@ -121,7 +121,7 @@
             <li class="line"></li>
             <li>
                 <div>
-                    <img src="../static/images/20150423183545tYnFzYnn3p.jpg" alt="pic">
+                    <img src="../static/images/20141030152751NRihyRENa7.jpg" alt="pic">
                 </div>
                 <h2>N3</h2>
                 <p>1600万电动旋转摄像头</p>
@@ -130,7 +130,7 @@
             <li class="line"></li>
             <li>
                 <div>
-                    <img src="../static/images/20150423183545tYnFzYnn3p.jpg" alt="pic">
+                    <img src="../static/images/20150120092342k2ABsEHnQN.jpg" alt="pic">
                 </div>
                 <h2>N3</h2>
                 <p>1600万电动旋转摄像头</p>
@@ -139,7 +139,7 @@
             <li class="line"></li>
             <li>
                 <div>
-                    <img src="../static/images/20150423183545tYnFzYnn3p.jpg" alt="pic">
+                    <img src="../static/images/20141029162235J7aJmCHkFm.jpg" alt="pic">
                 </div>
                 <h2>N3</h2>
                 <p>1600万电动旋转摄像头</p>
@@ -191,13 +191,13 @@
         <div class="world_main">
             <div class="world_left left">
                 <div class="a1 fade">
-                    <div><img src="../static/images/201403261455420lqMPNGENc.png" alt="pic"></div>
+                    <div><img src="../static/images/20131212113902waaLqQUWfB.jpg" alt="pic"></div>
                 </div>
                 <div class="a1 fade">
-                    <div><img src="../static/images/201403261455420lqMPNGENc.png" alt="pic"></div>
+                    <div><img src="../static/images/20140926184007v2rjcVFcbW.jpg" alt="pic"></div>
                 </div>
                 <div class="a1 fade">
-                    <div><img src="../static/images/201403261455420lqMPNGENc.png" alt="pic"></div>
+                    <div><img src="../static/images/20150226100534QqezQ85N6y.jpg" alt="pic"></div>
                 </div>
                 <div class="a1 fade">
                     <div><img src="../static/images/201403261455420lqMPNGENc.png" alt="pic"></div>
@@ -280,6 +280,7 @@
         </ul>
     </div>
 </div>
+
 <!--页面的售后部份-->
 <div id="after_sale">
     <div class="container">
@@ -347,6 +348,9 @@
         </p>
     </div>
 </div>
+<a id="btn" href="javascript:;" style='position:fixed;right: 0px; bottom: 25%;font-size: 24px;'>
+    <img src="../static/images/toTop1.png" alt="pic">
+</a>
 <script type="text/javascript" src="../static/js/swiper.js"></script>
 <script type="text/javascript" src="../static/js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="../static/js/oppo.js"></script>
@@ -370,6 +374,45 @@
             shadowScale: 0.94
         }
     });
+</script>
+<script>
+    window .onload = function () {
+
+        let tp = document.getElementById("btn");
+        tp.style.display = "none";
+        let timer = null;
+        tp.onclick = function () {
+            timer = setInterval(function () {
+                let backTop = document.documentElement.scrollTop || document.body.scrollTop;
+                // 越滚月慢
+                let speedTop = backTop/5;
+                document.documentElement.scrollTop -= backTop - speedTop;
+                if(backTop === 0){
+                    clearInterval(timer);
+                }
+            },30);
+        }
+        let pageHeight = 700;
+        let nav = document.getElementById("nav");
+        let navTop = nav.offsetTop;
+        window .onscroll = function () {
+            let backTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (backTop > pageHeight) {
+                tp.style.display = "block";
+            } else {
+                tp.style.display = "none";
+            }
+            if (backTop >= navTop) {
+                nav.style.position = "fixed";
+                nav.style.top = "0";
+                nav.style.left = "0";
+                nav.style.zIndex = "100";
+            } else {
+                nav.style.position = "";
+            }
+        }
+    }
+
 </script>
 </body>
 </html>
